@@ -62,7 +62,7 @@
                             </li>
                    
                             <li>
-                                <a href="users_order.html">Order</a>
+                                <a href="users_order.html">Create</a>
                             </li>
                             <li>
                                 <a href="users_view_orders.html">View</a>
@@ -75,36 +75,50 @@
                     </div>
 
                     <div class="col-md-10 fixed">
-                        <h1 style="text-align: center;">MAKE ORDER</h1>
+                        <h1>ORDERS PLACED BY THE USER</h1>
                         <hr>
 
-                        <form>
-                            <div class="form-group">
-                              <label for="exampleFormControlInput1">Meal</label>
-                              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter meal">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Quantity</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter quantity">
-                              </div>
-                              <div class="form-group">
-                                <label for="exampleFormControlInput1">Location</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter location">
-                              </div>
-                            <div class="form-group">
-                              <label for="exampleFormControlSelect1">Order_status</label>
-                              <select class="form-control" id="exampleFormControlSelect1">
-                                <option>Pending</option>
-                                <option>Completed</option>
-                                <option>Rejected</option>
-                              </select>
-                            </div>
-                            <button type="button" class="btn btn-primary btn-lg">Place Order</button>
+                        <table class="table table-borderless">
+                            <thead>
+                              <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Order_Date</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Order_Status</th>
+                                <th scope="col">Total_Cost</th>
+                              </tr>
+                           
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>11-04-2020</td>
+                                    <td>Otto</td>
+                                    <td>Rejected</td>
+                                    <td>120,000</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>12-04-2020</td>
+                                    <td>Thornton</td>
+                                    <td>Pending</td>
+                                    <td>50,000</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>13-04-2020</td>
+                                    <td>Thornton</td>
+                                    <td>Completed</td>
+                                    <td>150,000</td>
+                                  </tr>
+                                 
+                                </tbody>
+                              </table>
                             
-                          </form>
+                          </table>
+                          <button type="button" class="btn btn-primary btn-lg">Print</button>
 
-
-                    </div>
+                    
                 </div>
             
             </div>
