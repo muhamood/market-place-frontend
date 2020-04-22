@@ -62,10 +62,10 @@
                             </li>
                    
                             <li>
-                                <a href="create.html">Create</a>
+                                <a href="users_order.html">Order</a>
                             </li>
                             <li>
-                                <a href="view.html">View</a>
+                                <a href="view_user_order.html">View</a>
                             </li>
                             <li>
                                 <a href="update.html">Update</a>
@@ -75,56 +75,34 @@
                     </div>
 
                     <div class="col-md-10 fixed">
-                        <h1>LIST OF ITEMS ADDED</h1>
+                        <h1 style="text-align: center;">MAKE ORDER</h1>
                         <hr>
 
-                        <table class="table table-striped table-primary">
-                            <thead>
-                              <tr>
-                                <th scope="col">ID</th>
-                                <th scope="col">IMAGE</th>
-                                <th scope="col">PRICE</th>
-                                <th scope="col">CURRENT STOCK</th>
-                                <th scope="col">CATEGORY</th>
-                                <th scope="col">Actions</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                                <td>
-                                  <button class="btn btn-danger btn-sm">Delete</button>
-                                  <button class="btn btn-info btn-sm">Edit</button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                                <td></td>
-                                <td>
-                                    <button class="btn btn-danger btn-sm">Delete</button>
-                                    <button class="btn btn-info btn-sm">Edit</button>
-                                  </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                                <td></td>
-                                <td>
-                                    <button onclick="alert('Are u sure ')" class="btn btn-danger btn-sm">Delete</button>
-                                    <button class="btn btn-info btn-sm">Edit</button>
-                                  </td>
-                              </tr>
-                            </tbody>
-                          </table>
+                        <form>
+                            <div class="form-group">
+                              <label for="exampleFormControlInput1">Meal</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter meal">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Quantity</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter quantity">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleFormControlInput1">Location</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter location">
+                              </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlSelect1">Order_status</label>
+                              <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Pending</option>
+                                <option>Completed</option>
+                                <option>Rejected</option>
+                              </select>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-lg">Place Order</button>
+                            
+                          </form>
+
 
                     </div>
                 </div>
