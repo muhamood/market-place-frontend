@@ -10,7 +10,6 @@
 <body>
       <div class="container-fluid" style="margin: 0; padding: 0;">
           <div class="">
-         
              
              <div class="">
                 <!-- Sidebar -->
@@ -54,20 +53,18 @@
                     </div>
                   </nav>
 
-
-                  
                 <div class="row">
                     <div class="col-md-1 bg-danger">
                         <ul class="list-unstyled components" style="height: 83vh;">
                             <li>
-                                <a href="#" class="bg-default">Dashboard</a>
+                                <a href="#" class="text-white">Dashboard</a>
                             </li>
                    
                             <li>
-                                <a href="create.html">Create</a>
+                                <a href="users_order.html">Create</a>
                             </li>
                             <li>
-                                <a href="view.html">View</a>
+                                <a href="users_view_orders.html">View</a>
                             </li>
                             <li>
                                 <a href="update.html">Update</a>
@@ -77,12 +74,56 @@
                     </div>
 
                     <div class="col-md-10 fixed">
-                        <h1></h1>
+                        <h1>ORDERS PLACED BY THE USER</h1>
                         <hr>
 
-                       
+                        <table class="table table-borderless">
+                            <thead>
+                              <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Order_Date</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Order_Status</th>
+                                <th scope="col">Total_Cost</th>
+                                <th scope="col">Action</th>
+                              </tr>
+                           
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>11-04-2020</td>
+                                    <td>Otto</td>
+                                    <td>Rejected</td>
+                                    <td>120,000</td>
+                                    <td><button class="btn btn-sm btn-danger">Cancel</button></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>12-04-2020</td>
+                                    <td>Thornton</td>
+                                    <td>Pending</td>
+                                    <td>50,000</td>
 
-                    </div>
+                                    <td><button class="btn btn-sm btn-danger">Cancel</button></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>13-04-2020</td>
+                                    <td>Thornton</td>
+                                    <td>Completed</td>
+                                    <td>150,000</td>
+
+                                    <td><button class="btn btn-sm btn-danger">Cancel</button></td>
+                                  </tr>
+                                 
+                                </tbody>
+                              </table>
+                            
+                          </table>
+                          <button type="button" class="btn btn-primary btn-sm">Print</button>
+
+                    
                 </div>
             
             </div>
