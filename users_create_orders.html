@@ -36,16 +36,11 @@
                             </li>
                    
                             <li>
-                                <a href="admin_add_items.html" class="text-white" >Create</a>
+                                <a href="users_create_orders.html" class="text-white" >Create</a>
                             </li>
+                            
                             <li>
-                                <a href="admin_view_items.html" class="text-white">View</a>
-                            </li>
-                            <li>
-                                <a href="admin_update_items.html" class="text-white">Update</a>
-                            </li>
-                            <li>
-                              <a href="admin_view_cancel_user_orders.html" class="text-white">Orders</a>
+                              <a href="users_view_orders.html" class="text-white">Orders</a>
                           </li>
                             
                         </ul>
@@ -60,56 +55,37 @@
                         
                       </div>
                       
-                       
-                      <h1>ORDERS PLACED BY THE USER</h1>
+                        <!-- Search form -->
+                       <!-- <div class="md-form mt-1 pt-2">
+                          <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                       </div> -->
+
+                      <h1 style="text-align: center;">MAKE ORDER</h1>
                       <hr>
                       
-                      <table class="table table-borderless">
-                      <thead>
-                      <tr>
-                      <th scope="col">ID</th>
-                      <th scope="col">Order_Date</th>
-                      <th scope="col">Quantity</th>
-                      <th scope="col">Order_Status</th>
-                      <th scope="col">Total_Cost</th>
-                      <th scope="col">Action</th>
-                      </tr>
-                      </thead>
-                      <tbody>
-                      <tr>
-                      <th scope="row">1</th>
-                      <td>11-04-2020</td>
-                      <td>Otto</td>
-                      <td>Rejected</td>
-                      <td>120,000</td>
-                      <td><button class="btn btn-sm btn-danger">Cancel</button></td>
-                      </tr>
-                      <tr>
-                      <th scope="row">2</th>
-                      <td>12-04-2020</td>
-                      <td>Thornton</td>
-                      <td>Pending</td>
-                      <td>50,000</td>
-                      
-                      <td><button class="btn btn-sm btn-danger">Cancel</button></td>
-                      </tr>
-                      <tr>
-                      <th scope="row">3</th>
-                      <td>13-04-2020</td>
-                      <td>Thornton</td>
-                      <td>Completed</td>
-                      <td>150,000</td>
-                      
-                      <td><button class="btn btn-sm btn-danger">Cancel</button></td>
-                      </tr>
-                      </tbody>
-                      </table>
-                      </table>
-                      <button type="button" class="btn btn-primary btn-sm">Print</button>
-                      
+                      <form>
+                      <div class="form-group">
+                      <label for="exampleFormControlInput1">Meal</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter meal">
                       </div>
-                          </div>
-
+                      <div class="form-group">
+                      <label for="exampleFormControlInput1">Quantity</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter quantity">
+                      </div>
+                      <div class="form-group">
+                      <label for="exampleFormControlInput1">Location</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter location">
+                      </div>
+                      <div class="form-group">
+                      <label for="exampleFormControlSelect1">Order_status</label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Pending</option>
+                      <option>Completed</option>
+                      <option>Rejected</option>
+                      </select>
+                      </div>
+                      <button type="button" class="btn btn-primary btn-sm">Place Order</button>
+                      </form>
                       
                 </div>
             
